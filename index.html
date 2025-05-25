@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ShopEase - Modern eCommerce</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopEase</h1>
+    <div class="search-filter">
+      <input type="search" id="searchInput" placeholder="Search products..." />
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="productGrid" class="product-grid"></section>
+  </main>
+
+  <div id="cartSidebar" class="cart-sidebar hidden">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <div class="cart-total">
+      Total: $<span id="cartTotal">0.00</span>
+    </div>
+    <button id="checkoutBtn">Checkout</button>
+    <button id="closeCartBtn">Close</button>
+</div>
+
+  <button id="openCartBtn" class="cart-btn">🛒 Cart (0)</button>
+
+  <div id="checkoutModal" class="modal hidden">
+    <div class="modal-content">
+      <h2 style="color: white;">Checkout</h2>
+      <p>Thanks for shopping with ShopEase!</p>
+      <button id="closeModalBtn" style="color: white;">Close</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
